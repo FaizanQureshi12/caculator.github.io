@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+ <h1 id ="lose"></h1>
+ <script>
+     document.querySelector("#lose").innerText  = "My birth day year is 1998";
+ </script>
+
+ <input type="number" id="to">
+ <input type="number" id="uo">
+ <button onclick="submit1()">+</button>
+ <button onclick="submit2()">-</button>
+ <button onclick="submit3()">*</button>
+ <button onclick="submit4()">\</button>
+ <h1 id ="po"></h1>
+ <script>
+    function submit1(){
+        let to = document.querySelector("#to").value
+        let uo = document.querySelector("#uo").value
+
+        console.log("to",to);
+        console.log("uo",uo);
+        let result =Number(to)+Number(uo);
+        console.log("result",result);
+        let po = document.querySelector("#po");
+        po .innerText = result;
+   
+    }
+    function submit2(){
+        let to = document.querySelector("#to").value
+        let uo = document.querySelector("#uo").value
+
+        console.log("to",to);
+        console.log("uo",uo);
+        let result =Number(to)-Number(uo);
+        console.log("result",result);
+        let po = document.querySelector("#po");
+        po .innerText = result;
+   
+    }
+    function submit3(){
+        let to = document.querySelector("#to").value
+        let uo = document.querySelector("#uo").value
+
+        console.log("to",to);
+        console.log("uo",uo);
+        let result =Number(to)*Number(uo);
+        console.log("result",result);
+        let po = document.querySelector("#po");
+        po .innerText = result;
+   
+    }
+  function submit4(){
+        let to = document.querySelector("#to").value
+        let uo = document.querySelector("#uo").value
+
+        console.log("to",to);
+        console.log("uo",uo);
+        let result = Number(to)/Number(uo);
+        console.log("result",result);
+        let po = document.querySelector("#po");
+        po .innerText = result;
+   
+    }
+ </script>
+</body>
+</html>
